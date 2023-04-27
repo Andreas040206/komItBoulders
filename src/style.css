@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "Gantari", sans-serif;
+  user-select: none;
+}
+
+.bodyCon {
+}
+
+/* Menu */
+
+.menuCon {
+  background-color: #000000;
+  height: 76px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+}
+
+.menuScroll {
+  position: sticky;
+  top: -50px;
+}
+
+.bouldersLogo {
+  height: 50px;
+  width: auto;
+  transition: 0.2;
+  position: sticky;
+  top: 10px;
+}
+
+.menuBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-right: 20px;
+  transition: 0.3s;
+  position: sticky;
+  top: 10px;
+}
+
+.menuBtn {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.1s;
+}
+
+.menuBtn:hover {
+  color: rgb(169, 169, 169);
+}
+
+.menuIconBtn {
+  height: 30px;
+  width: 40px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: max(-500px, -80vw);
+  background-color: #757575;
+  height: 100vh;
+  width: min(500px, 80vw);
+  transition: 0.3s;
+}
+
+.sidebarRemoveArrow {
+  top: 10px;
+  left: 40px;
+  position: absolute;
+  font-size: 60px;
+  color: white;
+}
+
+.sidebarRemoveArrow:hover {
+  color: #c3c3c3;
+}
+
+.sidebarMenu {
+  position: absolute;
+  top: 100px;
+  padding: 0px 50px;
+  width: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Menu END */
+
+/* Homepage */
+
+.homepageCon {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepageBgImg {
+  background-image: url(./Img/bouldersBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepageBgText {
+  margin-top: 250px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.firsttimerBtn {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin-top: 200px;
+  background-color: #50c756;
+  padding: 25px 60px;
+  border-radius: 15px;
+}
+
+.firsttimerBtn:active {
+  scale: 1.01;
+}
+
+/* Homepage EMD */

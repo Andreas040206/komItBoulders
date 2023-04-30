@@ -1,11 +1,9 @@
-import homepageBgSrc from "../Img/bouldersBg.jpg";
-
 const createHomepage = () => {
   const content = document.createElement("div");
-  content.classList.add("homepageCon");
+  content.classList.add("contentCon");
 
   const homepageBgFrame = document.createElement("div");
-  homepageBgFrame.classList.add("homepageBgImg");
+  homepageBgFrame.classList.add("homepageBgImg", "imgFrame");
 
   const homepageBgText = document.createElement("div");
   homepageBgText.classList.add("homepageBgText");

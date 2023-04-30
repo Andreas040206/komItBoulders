@@ -4,10 +4,55 @@ body {
   margin: 0px;
   font-family: "Gantari", sans-serif;
   user-select: none;
+  background-color: #1d471f;
 }
 
 .bodyCon {
 }
+
+/* Universal */
+
+.contentCon {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgFrame {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partWithCenEl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px 50px;
+  flex-wrap: wrap;
+}
+
+.textCon {
+  text-align: center;
+}
+
+.thickText {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.notThickText {
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+/* Universal END */
 
 /* Menu */
 
@@ -25,6 +70,7 @@ body {
 .menuScroll {
   position: sticky;
   top: -50px;
+  z-index: 1;
 }
 
 .bouldersLogo {
@@ -71,6 +117,7 @@ body {
   height: 100vh;
   width: min(500px, 80vw);
   transition: 0.3s;
+  z-index: 1;
 }
 
 .sidebarRemoveArrow {
@@ -99,20 +146,9 @@ body {
 
 /* Homepage */
 
-.homepageCon {
-  display: flex;
-  flex-direction: column;
-}
-
 .homepageBgImg {
   background-image: url(./Img/bouldersBg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 1000px;
 }
 
 .homepageBgText {
@@ -120,6 +156,8 @@ body {
   font-size: 60px;
   font-weight: 900;
   color: #ffffff;
+  width: 80vw;
+  text-align: center;
 }
 
 .firsttimerBtn {
@@ -127,7 +165,7 @@ body {
   font-weight: 700;
   color: white;
   margin-top: 200px;
-  background-color: #50c756;
+  background-color: #3b9440;
   padding: 25px 60px;
   border-radius: 15px;
 }
@@ -137,3 +175,176 @@ body {
 }
 
 /* Homepage EMD */
+
+/* pris */
+
+.prisImgFrame {
+  background-image: url(./Img/bouldersBg.jpg);
+  height: 350px;
+  justify-content: center;
+}
+
+.prisImgText {
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.entryPart {
+  background-color: #1d471f;
+  padding: 40px 30px;
+}
+
+.prisBox {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.engangsEntreHeader {
+  background-color: #3b9440;
+  padding: 20px 20px;
+}
+
+.prisHeader {
+  font-size: 40px;
+}
+
+/* pris EMD */
+
+/* Hold  */
+
+.holdHeaderCon {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b9440;
+  text-align: center;
+}
+
+.holdHeaderText {
+  font-size: 40px;
+}
+
+.holdImgFrame {
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.holdBgImg {
+  transition: 2s;
+  align-items: center;
+  width: max(100%, 800px);
+  height: auto;
+  position: absolute;
+}
+
+.holdBgImg:hover {
+  scale: 1.15;
+}
+
+.holdImgHeader {
+  font-size: 60px;
+  text-align: center;
+  position: absolute;
+}
+
+.holdLinkEl {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  font-size: 20px;
+}
+
+/* Hold END */
+
+/* haller */
+
+.hallerContentCon {
+  gap: 120px;
+}
+
+.partTopHaller {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px 5vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partOfTopCon {
+  width: max(400px, 48%);
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.mapTextHaller {
+  margin: 0px 0px 20px 0px;
+}
+
+.mapsMapHaller {
+  height: 650px;
+  border: none;
+}
+
+.hallerIntroTextHeader {
+  font-size: 50px;
+}
+
+.underlineHallerHeader {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  height: 3px;
+  background-color: #fff;
+  width: 350px;
+}
+
+.hallerIntroText {
+  width: max(350px, 80%);
+  margin-bottom: 100px;
+}
+
+.aabningtiderText {
+  margin-bottom: 50px;
+}
+
+.partBottomHaller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hallerLinkCon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.hallerFrame {
+  height: min(400px, 90vw);
+  width: min(400px, 90vw);
+}
+
+.hallerLinkText {
+  width: 75vw;
+  text-align: center;
+}
+
+.underlineHallerBottom {
+  width: 80vw;
+}
+
+/* haller END */
